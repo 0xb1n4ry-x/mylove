@@ -74,16 +74,16 @@ export function WelcomeDialog() {
                 <p className="font-sans text-xs sm:text-sm leading-relaxed" style={{ color: '#fce4ec' }}>
                   Xin chào mọi người, tôi là{' '}
                   <span className="font-semibold" style={{ color: '#f9a8d4' }}>
-                    cou.jan_11
+                    cou.jan_11 or 0xdev
                   </span>{' '}
                   (Anh Nguyen).
                 </p>
                 <p className="font-sans text-xs sm:text-sm leading-relaxed" style={{ color: '#fce4ec' }}>
-                  Tôi làm ra website này chỉ gửi 1 và chỉ 1 người duy nhất, đó là{' '}
+                  Tôi làm ra website và dành tình cảm này chỉ gửi một và chỉ một người duy nhất, đó là{' '}
                   <span className="font-semibold" style={{ color: '#f9a8d4' }}>
                     thuyylie
                   </span>{' '}
-                  (Lê Thuỷ), nhân dịp ngày 8.3.2026.
+                  (Lê Thuỷ), nhân dịp ngày 8.3.2026. hehe :3
                 </p>
                 <p className="font-sans text-xs sm:text-sm leading-relaxed italic" style={{ color: '#f9a8d480' }}>
                   Nếu có traffic đổ về đây, mong mọi người thông cảm! Thân ái.
@@ -98,16 +98,16 @@ export function WelcomeDialog() {
                 <p className="font-sans text-xs sm:text-sm leading-relaxed" style={{ color: '#fce4ec' }}>
                   Hello everyone, I&apos;m{' '}
                   <span className="font-semibold" style={{ color: '#f9a8d4' }}>
-                    cou.jan_11
+                    cou.jan_11 or 0xdev
                   </span>{' '}
                   (Anh Nguyen).
                 </p>
                 <p className="font-sans text-xs sm:text-sm leading-relaxed" style={{ color: '#fce4ec' }}>
-                  I created this website for just one special person —{' '}
+                  I created this website and dedicated this feeling to only one person, and that is {' '}
                   <span className="font-semibold" style={{ color: '#f9a8d4' }}>
                     thuyylie
                   </span>{' '}
-                  (Lê Thuỷ) — for Women&apos;s Day 8.3.2026.
+                  (Lê Thuỷ) — for Women&apos;s Day 8.3.2026. hehe :3
                 </p>
                 <p className="font-sans text-xs sm:text-sm leading-relaxed italic" style={{ color: '#f9a8d480' }}>
                   If traffic comes to this site, I hope everyone understands. Cheers!

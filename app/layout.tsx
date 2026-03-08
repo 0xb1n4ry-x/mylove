@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Lato, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { TimeGate } from '@/components/TimeGate'
 import './globals.css'
 
 const lato = Lato({
@@ -36,9 +35,7 @@ export default function RootLayout({
   return (
     <html lang="vi" className={`${lato.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
-        <TimeGate>
-          {children}
-        </TimeGate>
+        {children}
         <Analytics />
       </body>
     </html>

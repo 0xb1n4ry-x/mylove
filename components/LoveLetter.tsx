@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const LETTER_LINES = [
-  'Em yêu,',
+  'Babie yêu dấu,',
   '',
   'Lúc ngồi gõ những dòng chữ này, anh cứ nghĩ mãi xem thế nào mới có thể gói gọn được tất cả những gì anh muốn nói với em. Ngôn từ thì có hạn, mà tình cảm trong anh lại nhiều hơn những gì anh có thể diễn đạt.',
   '',
