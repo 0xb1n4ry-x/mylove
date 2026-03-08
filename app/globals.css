@@ -1,0 +1,140 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Font variables from next/font */
+  --font-lato: 'Lato', 'system-ui', 'sans-serif';
+  --font-playfair: 'Playfair Display', 'Georgia', 'serif';
+
+  /* Romantic color palette */
+  --background: oklch(0.98 0.012 350);
+  --foreground: oklch(0.25 0.04 350);
+  --card: oklch(1 0.008 355);
+  --card-foreground: oklch(0.25 0.04 350);
+  --popover: oklch(1 0.008 355);
+  --popover-foreground: oklch(0.25 0.04 350);
+  --primary: oklch(0.62 0.18 10);
+  /* warm rose red */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.93 0.04 320);
+  /* soft lavender */
+  --secondary-foreground: oklch(0.35 0.08 320);
+  --muted: oklch(0.95 0.02 340);
+  --muted-foreground: oklch(0.55 0.05 340);
+  --accent: oklch(0.88 0.07 350);
+  /* pink pastel */
+  --accent-foreground: oklch(0.35 0.1 10);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.90 0.04 350);
+  --input: oklch(0.93 0.03 350);
+  --ring: oklch(0.62 0.18 10);
+  --radius: 1rem;
+  /* Custom romantic tokens */
+  --romantic-pink: oklch(0.88 0.09 355);
+  --romantic-rose: oklch(0.72 0.16 10);
+  --romantic-lavender: oklch(0.87 0.06 300);
+  --romantic-cream: oklch(0.98 0.015 60);
+  --romantic-glow: oklch(0.62 0.18 10 / 0.3);
+}
+
+.dark {
+  --background: oklch(0.12 0.03 350);
+  --foreground: oklch(0.96 0.02 350);
+  --card: oklch(0.16 0.03 350);
+  --card-foreground: oklch(0.96 0.02 350);
+  --popover: oklch(0.16 0.03 350);
+  --popover-foreground: oklch(0.96 0.02 350);
+  --primary: oklch(0.72 0.18 10);
+  --primary-foreground: oklch(0.12 0.03 350);
+  --secondary: oklch(0.22 0.05 320);
+  --secondary-foreground: oklch(0.90 0.04 320);
+  --muted: oklch(0.20 0.03 350);
+  --muted-foreground: oklch(0.65 0.06 350);
+  --accent: oklch(0.28 0.07 350);
+  --accent-foreground: oklch(0.96 0.02 350);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.25 0.04 350);
+  --input: oklch(0.25 0.04 350);
+  --ring: oklch(0.72 0.18 10);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: var(--font-lato);
+  --font-serif: var(--font-playfair);
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-romantic-pink: var(--romantic-pink);
+  --color-romantic-rose: var(--romantic-rose);
+  --color-romantic-lavender: var(--romantic-lavender);
+  --color-romantic-cream: var(--romantic-cream);
+  --color-romantic-glow: var(--romantic-glow);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: oklch(0.97 0.015 355);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.72 0.16 10);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.62 0.18 10);
+  }
+}
