@@ -18,9 +18,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Happy Women\'s Day 8/3 ❤️',
-  description: 'A romantic journey crafted with love for the most wonderful girl in my life.',
-  generator: 'v0.app',
+  title: "Happy Women's Day 8/3 ❤️ - thuyylie X cou.jan_11",
+  description: "A small love story dedicated to Lê Thuỷ, the girl who makes my world brighter every day.",
   icons: {
     icon: [
       { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
